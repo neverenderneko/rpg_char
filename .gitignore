@@ -1,0 +1,205 @@
+# ============================================================================
+# .gitignore — Tells Git which files/folders to exclude from version control
+# ============================================================================
+#
+# HOW TO USE THIS FILE:
+#
+# 1. Place this file at the ROOT of your Git repository.
+# 2. Lines starting with '#' are comments (ignored by Git).
+# 3. Patterns are matched relative to the .gitignore file's location.
+# 4. A leading '/' anchors a pattern to the repo root
+#      (e.g., /build matches only the top-level build/ dir, not nested ones).
+# 5. A trailing '/' matches directories only (e.g., node_modules/).
+# 6. A leading '!' negates a pattern (re-includes a previously excluded file).
+# 7. '**' matches any number of directories (e.g., **/foo matches any 'foo').
+# 8. '*' matches anything except a slash; '?' matches any single char.
+# 9. Patterns in subdirectory .gitignore files override parent patterns.
+# 10. If a file is ALREADY tracked by Git, adding it to .gitignore won't
+#     untrack it. Run: git rm --cached <file>  then commit.
+# 11. For personal/global ignores, use: git config --global core.excludesFile
+#         ~/.gitignore_global
+# 12. To check if a file is being ignored: git check-ignore -v <file>
+# 13. To ignore files that others on the team should also ignore, put them
+#     here. To ignore files only on YOUR machine, use .git/info/exclude
+#     or the global excludesFile.
+#
+# Tip: Generate project-specific .gitignore files at https://www.toptal.com/developers/gitignore
+#      or browse GitHub's collection at https://github.com/github/gitignore
+# ============================================================================
+
+
+# ----------------------------------------------------------------------------
+# OS-Specific Files
+# ----------------------------------------------------------------------------
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+
+
+# ----------------------------------------------------------------------------
+# IDEs & Editors
+# ----------------------------------------------------------------------------
+
+# VS Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# JetBrains (IntelliJ, PyCharm, CLion, WebStorm, etc.)
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+.netrwhist
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+
+# ----------------------------------------------------------------------------
+# Build & Distribution Output
+# ----------------------------------------------------------------------------
+
+build/
+dist/
+out/
+bin/
+*.o
+*.obj
+*.so
+*.dll
+*.dylib
+*.exe
+*.a
+*.lib
+
+
+# ----------------------------------------------------------------------------
+# Dependencies & Package Managers
+# ----------------------------------------------------------------------------
+
+node_modules/
+vendor/
+.pip-cache/
+.gradle/
+
+
+# ----------------------------------------------------------------------------
+# Python (if applicable — remove if not using Python)
+# ----------------------------------------------------------------------------
+
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+*.egg
+.eggs/
+pip-log.txt
+pip-delete-this-directory.txt
+.venv/
+venv/
+env/
+.tox/
+.coverage
+.coverage.*
+htmlcov/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Python version managers
+# .python-version    # uncomment if you don't want to pin pyenv version
+
+
+# ----------------------------------------------------------------------------
+# Node.js / JavaScript (if applicable — remove if not using JS)
+# ----------------------------------------------------------------------------
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.npm
+.yarn-integrity
+.eslintcache
+.parcel-cache
+.next/
+.nuxt/
+.cache/
+
+
+# ----------------------------------------------------------------------------
+# Environment & Secrets
+# ----------------------------------------------------------------------------
+
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/
+
+
+# ----------------------------------------------------------------------------
+# Logs & Databases
+# ----------------------------------------------------------------------------
+
+*.log
+logs/
+*.sqlite
+*.sqlite3
+*.db
+
+
+# ----------------------------------------------------------------------------
+# Testing & Coverage
+# ----------------------------------------------------------------------------
+
+coverage/
+.nyc_output/
+
+
+# ----------------------------------------------------------------------------
+# Miscellaneous / Project-Specific
+# ----------------------------------------------------------------------------
+
+# Add your project-specific ignores below this line
+# Examples: large data files, generated assets, scratch directories
